@@ -6,7 +6,7 @@ namespace FizzBuzz
     {
         public static string CountOff(int givenNumber)
         {
-            throw new NotImplementedException();
+            return givenNumber.ToString();
         }
     }
 }
