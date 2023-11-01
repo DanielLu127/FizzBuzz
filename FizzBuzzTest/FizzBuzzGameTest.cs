@@ -6,12 +6,14 @@ namespace FizzBuzzTest
     public class FizzBuzzGameTest
     {
         [Fact]
-        public void Test1()
+        public void Should_return_the_given_number_when_countOff_given_a_normal_case()
         {
-            FizzBuzzGame game = new FizzBuzzGame();
-
-            //then
-            Assert.NotNull(game);
+            //Given
+            int givenNumber = 1;
+            //When
+            string result = FizzBuzzGame.CountOff(givenNumber);
+            //Then
+            Assert.Equal("1", result);
         }
     }
 }
